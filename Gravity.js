@@ -7,7 +7,7 @@ object.y = PlatForm1.y - object.size;
 object.isGrounded = true;
         }
  if(!object.isGrounded){
-        object.y += object.yv}
+        object.y += object.vy}
     if(object.y >= CS - object.size){
         object.y = CS - object.size;
         object.isGrounded = true;
