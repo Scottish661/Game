@@ -1,3 +1,6 @@
+const leftButton = document.getElementById("leftButton");
+const rightButton = document.getElementById("rightButton");
+const jumpButton = document.getElementById("jumpButton");
 const key= {
     d: { pressed: false },
     a: { pressed: false }
