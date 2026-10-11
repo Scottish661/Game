@@ -9,7 +9,7 @@ constructor(x,y,size,ImageName,health){
     this.health = health;
     this.Alive = true;
     this.immortal = true;
-    this.vy = 0;
+    this.vy = 1
     }
     draw(){
 pen.drawImage(this.img,this.x,this.y,this.size,this.size)
