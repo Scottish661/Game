@@ -1,4 +1,4 @@
-const keys = {
+const key= {
     d: { pressed: false },
     a: { pressed: false }
 };
