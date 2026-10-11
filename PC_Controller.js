@@ -16,12 +16,14 @@ if(player1.Alive && player1.isGrounded || player1.immortal){
     canvas.addEventListener("keyup", (event) => {
 if(player1.Alive && player1.isGrounded || player1.immortal){
     switch(event.key){
-        case 'd';
-        key.d.pressed = true
-        break
-        case 'a';
-        key.a.pressed = true
-        break
+        switch (event.key) {
+    case "d":
+        keys.d.pressed = true;
+        break;
+}
+        case 'a':
+        key.a.pressed = true;
+        break;
         }
         
     }
