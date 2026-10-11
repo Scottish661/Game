@@ -2,13 +2,13 @@ canvas.addEventListener("keydown", (event) => {
 if(player1.Alive && player1.isGrounded || player1.immortal){
     switch(event.key){
         case 'd';
-        player1.x++
+        key.d.pressed = true
         break
         case 'a';
-        player1.x--
+        key.a.pressed = true
         break
-        case 'd';
-        player1.y -25
+        case 'w';
+        player1.vy =- 25
         break
         }
         
