@@ -8,7 +8,7 @@ constructor(x,y,size,ImageName,health){
     this.img.src = ImageName;
     this.health = health;
     this.Alive = true;
-    this.immortal = true;
+    this.immortal = false;
     this.vy = 1
     }
     draw(){
