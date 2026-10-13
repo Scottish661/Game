@@ -1,5 +1,5 @@
 let canvas = document.getElementById("canvas");
-let pen = canvas.getcontent("2d");
+let pen = canvas.getContext("2d");
 if(canvas){
 document.body.style.backgroundColor = "black";
 }
