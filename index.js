@@ -1,9 +1,11 @@
-let  canvas = document.getElementById('canvas');
-let pen = canvas.getContext("2d");
+let canvas = document.getElementById("canvas");
+let pen = canvas.getcontent("2d");
 if(canvas){
-    document.body.style.backgroundColor = "black":
-    }
-canvas.width = 1024;
-canvas.height = 576;
-pen.filStyle = "red";
-pen.fillRect(0,0,canvas.width,canvas.height);
+document.body.style.backgroundColor = "black";
+}
+let CW = 1024;
+let CH = 512;
+canvas.width = CW;
+canvas.height = CH;
+pen.fillStyle = "red";
+pen.fillRect(0,0,CW,CH);
