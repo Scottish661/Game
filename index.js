@@ -8,4 +8,4 @@ let CH = 512;
 canvas.width = CW;
 canvas.height = CH;
 pen.fillStyle = "red";
-pen.fillRect(0,0,CW,CH);
+pen.fillRect(0,0,50,50);
