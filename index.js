@@ -23,6 +23,7 @@ pen.fillRect(this.p.x,this.p.y,100,100)
     update(){
         this.draw()
         this.p.y += this.v.y
+        this.v.y += 0.5
         }
         }
 const player1 = new Player({
