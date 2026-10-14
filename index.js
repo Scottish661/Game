@@ -9,7 +9,7 @@ document.body.style.backgroundColor = "black";
 canvas.style.backgroundColor = "white";
 }
 class Player{
-    constructor(x,y,width,height, vy,color){
+    constructor(p){
         this.p = {
             x: 0,
             y: 0,
@@ -24,8 +24,14 @@ pen.fillRect(this.p.x,this.p.y,100,100)
         this.p.y++
         }
         }
-const player1 = new Player()
-const player2 = new Player()
+const player1 = new Player({
+x: 0,
+y: 0,
+})
+const player2 = new Player({
+x: 300,
+y: 100,
+})
 function animate(){
 window.requestAnimationFrame(animate)
 pen.fillStyle = "white";
