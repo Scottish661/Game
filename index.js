@@ -6,7 +6,7 @@ canvas.height = CH;
 let pen = canvas.getContext("2d");
 if(canvas){
 document.body.style.backgroundColor = "black";
-document.canvas.style.backgroundColor = "white";
+canvas.style.backgroundColor = "white";
 }
 class Player{
     constructor(x,y,width,height, vy,color){
