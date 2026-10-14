@@ -10,18 +10,19 @@ canvas.style.backgroundColor = "white";
 }
 class Player{
     constructor(p){
-        this.p = {
+        this.p = p
+        this.v = {
             x: 0,
-            y: 0,
+            y: 1
             }
-        }
+            }
         draw(){ 
 pen.fillStyle = 'red'
 pen.fillRect(this.p.x,this.p.y,100,100)
     }
     update(){
         this.draw()
-        this.p.y++
+        this.p.y += this.v.y
         }
         }
 const player1 = new Player({
