@@ -20,14 +20,18 @@ pen.fillStyle = 'red'
 pen.fillRect(this.p.x,this.p.y,100,100)
     }
     update(){
+        this.draw()
         this.p.y++
         }
         }
-let player = new Player()
+const player1 = new Player()
+const player2 = new Player()
 function animate(){
 window.requestAnimationFrame(animate)
 pen.fillStyle = "white";
 pen.fillRect(0,0,CW,CH);
-player.draw()
+player1.update()
+player2.update()
+
 }
 animate()
