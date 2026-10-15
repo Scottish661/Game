@@ -3,6 +3,7 @@ let CW = 1024;
 let CH = 512;
 canvas.width = CW;
 canvas.height = CH;
+const gravity = 0.5
 let pen = canvas.getContext("2d");
 if(canvas){
 document.body.style.backgroundColor = "black";
@@ -23,7 +24,7 @@ pen.fillRect(this.p.x,this.p.y,100,100)
     update(){
         this.draw()
         this.p.y += this.v.y
-        this.v.y += 0.5
+        this.v.y += gravity 
         }
         }
 const player1 = new Player({
