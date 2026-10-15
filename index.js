@@ -28,7 +28,7 @@ pen.fillRect(this.p.x,this.p.y,100,this.height)
         if(this.p.y + this.height < CH){
         this.v.y += gravity
         }
-        else {this.p.y = 0;} 
+        else {this.v.y = 0;}
         }
         }
 const player1 = new Player({
