@@ -22,10 +22,10 @@ class Player{
 pen.fillStyle = 'red'
 pen.fillRect(this.p.x,this.p.y,100,this.height)
     }
-    function update(){
+     update(){
         this.draw()
         this.p.y += this.v.y
-        if(this.p.y += this.height < CH){
+        if(this.p.y + this.height < CH){
         this.v.y += gravity
         }
         else {this.p.y = 0;} 
