@@ -16,15 +16,19 @@ class Player{
             x: 0,
             y: 1
             }
+            this.height = 100 
             }
         draw(){ 
 pen.fillStyle = 'red'
-pen.fillRect(this.p.x,this.p.y,100,100)
+pen.fillRect(this.p.x,this.p.y,100,this.height)
     }
-    update(){
+    (){
         this.draw()
         this.p.y += this.v.y
-        this.v.y += gravity 
+        if(this.p.y += this.height < CH){
+        this.v.y += gravity
+        }
+        else {this.p.y = 0;} 
         }
         }
 const player1 = new Player({
